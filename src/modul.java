@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class modul {
-    public static void main(String[] args) {
+    public static void main(String[] args){
         Library library = new Library();
         Odtwarzacz player = new Odtwarzacz();
         Scanner scanner = new Scanner(System.in);
