@@ -6,10 +6,10 @@ public class modul {
         Odtwarzacz player = new Odtwarzacz();
         Scanner scanner = new Scanner(System.in);
 
-        // Przykładowe dane (można wczytać z pliku później)
-        library.AddSong(new Song("Imagine - John Lennon"));
-        library.AddSong(new Song("Bohemian Rhapsody - Queen"));
-        library.AddSong(new Song("Billie Jean - Michael Jackson"));
+
+        library.AddSong(new Song("Enter Sandman - Metallica"));
+        library.AddSong(new Song("Master of puppets - Metallica"));
+        library.AddSong(new Song("One - Metallica"));
 
         while (true) {
             System.out.println("\n1. Wyświetl utwory");
@@ -20,7 +20,7 @@ public class modul {
             System.out.print("Wybór: ");
 
             int choice = scanner.nextInt();
-            scanner.nextLine(); // czyści bufor
+            scanner.nextLine(); //
 
             switch (choice) {
                 case 1 -> {
@@ -53,9 +53,9 @@ public class modul {
                             playlist.dodaj_piosenke(library.getSongs().get(songNum - 1));
                         }
                     }
-                    scanner.nextLine(); // czyść enter
+                    scanner.nextLine(); //
                     library.DodajPlayliste(playlist);
-                    System.out.println("✔ Playlistę dodano.");
+                    System.out.println("Playlistę dodano.");
                 }
                 case 4 -> {
                     for (Playlist pl : library.getPlaylists()) {

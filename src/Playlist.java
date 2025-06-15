@@ -1,6 +1,4 @@
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.PrintWriter;
+
 import java.util.ArrayList;
 import java.util.List;
 public class Playlist {
@@ -19,6 +17,11 @@ public class Playlist {
         return name;
     }
 
-
-
+    @Override
+    public String toString() {
+        return "Playlist{" +
+                "name='" + name + '\'' +
+                ", songs=" + songs +
+                '}';
+    }
 }
