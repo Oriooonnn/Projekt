@@ -3,7 +3,7 @@ import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Library {
+public class Library{
     private List<Song> songs = new ArrayList<>();
     private List<Playlist> playlists = new ArrayList<>();
     public void AddSong(Song song){
