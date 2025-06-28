@@ -15,3 +15,4 @@ public class Podcast extends Song {
         return "Podcast: " + getTitle() + " (host: " + temat + ")";
     }
 }
+
